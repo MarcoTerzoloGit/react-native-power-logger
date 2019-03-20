@@ -1,0 +1,27 @@
+{
+  "name": "react-native-power-logger",
+  "version": "1.0.0",
+  "description": "A react-native specific debugging tools, a lightweight customizable logger to log regular items, the react-native bridge, async storage and array's maps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Not yet available, to be done\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/MarcoTerzolo/react-native-power-logger.git"
+  },
+  "keywords": [
+    "react-native",
+    "logger",
+    "react-native bridge",
+    "async storage",
+    "custom logger",
+    "debugger"
+  ],
+  "author": "Marco Terzolo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/MarcoTerzolo/react-native-power-logger/issues"
+  },
+  "homepage": "https://gitlab.com/MarcoTerzolo/react-native-power-logger#README"
+}
