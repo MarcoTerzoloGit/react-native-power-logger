@@ -9,18 +9,19 @@ import RNlog from 'react-native-power-logger';
 RNlog.logStorage(); // See in table format all your react-native async storage
 ```
 
-## installation
+## Installation
 ```
 $ npm install react-native-power-logger
 ```
 
-## usage
+## Usage
 ```js
 const RNlog = require('react-native-power-logger');
+'...or'
 import RNlog from 'react-native-power-logger';
 ```
 
-## test on demo project 
+## Test on demo project 
 1. Install react-native cli
 2. open path in terminal and run:
 `react-native init demo && cd demo && npm install react-native-power-logger`
@@ -72,7 +73,7 @@ logStorage() // returns a table in console with async storage data displayed
 
 `logBridge(versus, prefix)` 
 
-`[optional, string] versus: "toJavascript" || "toNative" `
+`[optional, string] versus: "toJavascript" || "toNative" `,
 `[optional, string] prefix: "prefix-message" `
 ```js
 
@@ -82,7 +83,7 @@ logBridge() // returns in console a log of every data exchange in react-native b
 
 `findInBridge(targets, prefix)` 
 
-`[optional, string[]] targets: ["module name", "method name"] `
+`[optional, string[]] targets: ["module name", "method name"] `,
 `[optional, string] prefix: "prefix-message" `
 ```js
 
@@ -92,10 +93,10 @@ findInBridge() // returns in console a log of the items we need to look up in br
 
 `log(target, prefix, level, lineBreak, breakColor)`
 
-`[optional, any ] target: objINeedToLog `
-`[optional, string] prefix: "prefix-message" `
-`[optional, string] level: "info" || "warn" || "err" `
-`[optional, boolean] lineBreak: true `
+`[optional, any ] target: objINeedToLog `,
+`[optional, string] prefix: "prefix-message" `,
+`[optional, string] level: "info" || "warn" || "err" `,
+`[optional, boolean] lineBreak: true `,
 `[optional, string] breakColor: "#fff" `
 ```js
 
@@ -124,9 +125,8 @@ err() // returns a console.err
 
 ```
 
-
-## warnings
+## Warnings
 `overrideNativeMap` will override the native `Array.prototype.map`, use it only for debugging. When turned on will dump all items from all the array's maps (frameworks included).
 
-## support
-Star the project if you liked! Long live react-native!
+## Support
+Star the project if you liked! Share it, fork it or contribute to improve it. Long live react-native!

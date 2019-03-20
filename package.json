@@ -1,6 +1,6 @@
 {
   "name": "react-native-power-logger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A react-native specific debugging tools, a lightweight customizable logger to log regular items, the react-native bridge, async storage and array's maps",
   "main": "index.js",
   "scripts": {
