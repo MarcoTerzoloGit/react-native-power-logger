@@ -5,7 +5,6 @@ import { logFromAsyncStorage } from './src/utils.storage';
 import { logger } from './src/utils.logger';
 import { enableLogMap, overrideNativeMap } from './src/utils.nativeExtensions';
 
-
 export default class RNLogger {
 
   /**
@@ -121,4 +120,15 @@ export default class RNLogger {
   static err(message) {
     console.error(message);
   }
+
+  /**
+   * Util to show the current stack trace
+   *
+   * @static
+   * @memberof RNLogger
+   */
+  static trace() {
+    console.trace();
+  }
+  
 }

@@ -4,9 +4,7 @@ A react-native specific debugging tools, a lightweight customizable logger to lo
 
 Example:
 ```js
-import RNlog from 'react-native-power-logger';
-
-RNlog.logStorage(); // See in table format all your react-native async storage
+console.pl.logStorage(); // See in table format all your react-native async storage
 ```
 
 ## Installation
@@ -14,11 +12,27 @@ RNlog.logStorage(); // See in table format all your react-native async storage
 $ npm install react-native-power-logger
 ```
 
-## Usage
+Then, in index.js or at top of your application:
+
 ```js
 const RNlog = require('react-native-power-logger');
 '...or'
 import RNlog from 'react-native-power-logger';
+
+console.pl = RNLog;
+
+```
+
+## Usage
+
+you can now use regular console around, and have a console.pl object that contains all the Power Logger methods!
+
+So you can do:
+
+```js
+
+console.pl.logBridge(); // this will log the bridge messages
+
 ```
 
 ## Test on demo project 
@@ -125,8 +139,20 @@ err() // returns a console.err
 
 ```
 
+`trace()`
+```js
+
+trace() // returns a console.trace
+
+```
+
 ## Warnings
 `overrideNativeMap` will override the native `Array.prototype.map`, use it only for debugging. When turned on will dump all items from all the array's maps (frameworks included).
 
 ## Support
-Star the project if you liked! Share it, fork it or contribute to improve it. Long live react-native!
+Star the project if you liked! Share it, fork it or contribute to improve it.
+
+## TODO
+- [ ] Log http requests
+- [ ] Track foreground-background
+- [ ] Track performance
